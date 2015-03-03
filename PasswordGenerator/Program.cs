@@ -43,7 +43,7 @@ namespace PasswordGenerator
                 }
                 index++;
             }
-            if (lowerCharCount >= 1 && upperCharCount >= 1 && numCount >= 1)
+            if (lowerCharCount >= 1 && upperCharCount >= 1 && numCount >= 1 && (password.Distinct().Count() == 8))
             {
                 return new string(password);
             }
